@@ -16,8 +16,8 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 22px;
+  line-height: 26px;
   font-weight: 400;
   color: #000;
   background-color: #fff;
@@ -46,12 +46,13 @@ body {
   font-weight: 700;
 }
 
-.navigation-item .search-button {
+.navigation-search-button {
   background-color: #756157;
   color: #fff;
+  text-decoration: none;
 }
 
-.search-form .search-form-button {
+.search-form-button {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -68,7 +69,7 @@ body {
   background-color: #82B3D3;
 }
 
-.filter-button {
+.filter-form-button {
   color: #fff;
   background-color: #82B3D3;
 }
@@ -76,15 +77,30 @@ body {
 .reset-link {
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400;
   text-decoration: none;
   color: #fff;
   background-color: #82B3D3;
 }
 
+.hotel-about-button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #756157;
+}
+
+.hotel-favorites-button {
+  background-color: #82B3D3;
+  color: #fff;
+}
+
+.added-favorites-button {
+  background-color: #7DB54F;
+  color: #fff;
+}
+
 /* ЗАГОЛОВКИ */
 
-.heading {
+.title {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 36px;
@@ -98,7 +114,7 @@ body {
   font-weight: 700;
 }
 
-.filter-title {
+.hotel-filter-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -114,9 +130,9 @@ body {
 
 /* ОПИСАНИЯ */
 
-.advantages-main-desc, .search-form-desc, .newsletter-desc {
-  font-size: 22px;
-  line-height: 26px;
+.advantages-desc {
+  font-size: 18px;
+  line-height: 21px;
 }
 
 /* ГЛАВНАЯ СТРАНИЦА */
@@ -130,28 +146,51 @@ body {
   text-align: center;
 }
 
-.advantages, .search-form, .newsletter {
+.advantages {
+  text-align: center;
+}
+
+.search-form {
   text-align: center;
 }
 
 /* ПРЕИМУЩЕСТВА */
 
-.blue-item {
+.true-town {
   color: #fff;
   background-color: #82B3D3;
 }
 
-.light-blue-item {
+.devil-bridge {
+  color: #fff;
+  background-color: #82B3D3;
+}
+
+.small-square {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.dark-blue-item {
+.few-tourists {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.beautiful-road {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-more {
+.motel {
+  color: #000;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.food {
   color: #000;
   background-color: #fff;
+}
+
+.souvenirs {
+  color: #000;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 /* РАССЫЛКА */
@@ -162,17 +201,18 @@ body {
   background-color: #82B3D3;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 .newsletter-inner {
-  background-image: none;
   color: #000;
   background-color: #fff;
+  text-align: center;
 }
 
 /* ФИЛЬТР */
 
-.inner-header {
+.hotel-filter {
   background-image: url("../images/filter-background.jpg");
   color: #fff;
   background-color: #82B3D3;
@@ -183,14 +223,23 @@ body {
 .breadcrumbs-item {
   font-size: 16px;
   line-height: 21px;
-  font-weight: 400;
   color: #fff;
 }
 
-.catalog-filter-title {
+.filter-form-title {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.filter-form-item {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotel-counter-title {
+  font-size: 18px;
+  line-height: 21px;
 }
 
 /* КАРТОЧКА ОТЕЛЯ */
@@ -200,19 +249,15 @@ body {
   color: inherit;
 }
 
-.hotel-about {
-  text-decoration: none;
-  color: #fff;
-  background-color: #756157;
-}
-
-.hotel-favorites {
-  background-color: #82B3D3;
-  color: #fff;
+.hotel-price-list {
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .hotel-rating {
   background-color: #F2F2F2;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 /* ПАГИНАЦИЯ */
@@ -221,6 +266,8 @@ body {
   text-decoration: none;
   color: #fff;
   background-color: #82B3D3;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .pagination-current {
@@ -233,12 +280,7 @@ body {
 .footer-tel {
   font-size: 40px;
   line-height: 40px;
-  font-weight: 400;
   color: #000;
   text-decoration: none;
 }
 
-.social-link, .view-button {
-  text-decoration: none;
-  color: inherit;
-}
